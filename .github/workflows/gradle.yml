@@ -41,16 +41,15 @@ jobs:
         with:
           jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
           generate-summary: true
-          generate-coverage-badge: true
           fail-on-coverage-decrease: true
           fail-on-branches-decrease: true
 
-      - name: Commit and push the summary and badge (if it changed)
+      - name: Commit and push the summary (if it changed)
         uses: EndBug/add-and-commit@v7
         with:
           default_author: github_actions
-          message: 'commit summary and badge'
-          add: ['*.svg', '*.json']
+          message: 'commit summary'
+          add: '*.json'
 
 
 
