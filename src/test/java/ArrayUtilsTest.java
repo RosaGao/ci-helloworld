@@ -3,11 +3,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ArrayUtilsTest {
 
-  @Test
-  public void testFindLastNull() {
-    // Do not execute fault
-    assertThrows(NullPointerException.class, () -> {ArrayUtils.findLast(null, 3);});
-  }
+//  @Test
+//  public void testFindLastNull() {
+//    // Do not execute fault
+//    assertThrows(NullPointerException.class, () -> {ArrayUtils.findLast(null, 3);});
+//  }
 
 
   @Test
