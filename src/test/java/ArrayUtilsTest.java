@@ -22,16 +22,16 @@ public class ArrayUtilsTest {
     assertEquals(-1, ArrayUtils.findLast(new int[]{1, 2}, 3));
   }
 
-//  @Test
-//  public void testFindLastExistsFirstElement() {
-//    assertEquals(0, ArrayUtils.findLast(new int[]{2, 3, 5}, 2));
-//  }
-//
-//  @Test
-//  public void testOddOrPosNull() {
-//    // Do not execute fault
-//    assertThrows(NullPointerException.class, () -> {ArrayUtils.oddOrPos(null);});
-//  }
+  @Test
+  public void testFindLastExistsFirstElement() {
+    assertEquals(0, ArrayUtils.findLast(new int[]{2, 3, 5}, 2));
+  }
+
+  @Test
+  public void testOddOrPosNull() {
+    // Do not execute fault
+    assertThrows(NullPointerException.class, () -> {ArrayUtils.oddOrPos(null);});
+  }
 
 
   @Test
